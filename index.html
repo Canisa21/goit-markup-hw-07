@@ -46,6 +46,20 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
               >
             </li>
           </ul>
+          
+            <button class="menu-button js-open-menu" >
+              <svg width="32px" height="22px"><use href="./images/icons.svg#icon-menu-hamburger"></use></svg>
+            </button>
+            <div class="mobile-menu js-menu-container">
+		<button class="clo-button js-close-menu">x</button>
+		<div class="menu-js-wrapper"><menu class="menu-js">
+			<li class="list-elements"><a href="./index.html" class="links-js">Studio</a></li>
+      <li class="list-elements"><a href="./portfolio.html" class="links-js">Portfolio</a></li>
+      <li class="list-elements"><a href="#" class="links-js">Contacts</a></li>
+		</menu>
+    </div>
+	</div>
+            
         </div>
       </div>
     </header>
@@ -112,7 +126,7 @@ I accept the terms and conditions of the<a href="#" class="link-form">Privacy Po
     </div>
       </section>
 
-      <section class="section-main-pillars section-main-pillars">
+      <section class="section section-main-pillars">
         <div class="container">
           <ul class="main-pillars-list">
             <li>
@@ -160,9 +174,9 @@ I accept the terms and conditions of the<a href="#" class="link-form">Privacy Po
         </div>
       </section>
 
-      <section class="section section-solutions">
+      <section class="secition section-solutions">
         <div class="container">
-          <h2 class="header-two">What are we doing</h2>
+          <h2 class="header-two solution-header">What are we doing</h2>
 
           <ul class="solutions-list">
             <li>
@@ -368,6 +382,7 @@ I accept the terms and conditions of the<a href="#" class="link-form">Privacy Po
       </div>
       
     </footer>
+    <script src="./js/mobile-menu.js"></script>
      <script src="./js/modal.js"></script>
   </body>
 </html>
