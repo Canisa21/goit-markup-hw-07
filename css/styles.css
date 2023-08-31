@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-    max-width: 428px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -94,7 +94,18 @@ body {
 .clo-button {
     position: absolute;
     inset: 1em 1em auto auto;
+    background-color: #e7e9fc;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        padding-bottom: 8px;
+        fill: rgba(46, 47, 66, 1);
+        top: 24px;
+            right: 24px;
+            width: 24px;
+            height: 24px;
 }
+
+
 .menu-js-wrapper {
     margin-top: 80px;
     margin-left: 40px;
@@ -115,6 +126,52 @@ body {
     margin-bottom: 40px;
 }
 
+.mobile-links-contact {
+    list-style-type: none;
+    margin-top: 244px;
+    
+
+}
+
+.tel-link {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.72px;
+        text-decoration: none;
+        color:var(--color-logo);
+}
+
+.mail-link {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+        text-decoration: none;
+        color: var(--color-text)
+}
+.sm-list-mobile {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 56px;
+    margin-top: 48px;
+    
+}
+
+.mobile-icon-wrapper {
+    background-color: rgba(77, 90, 229, 1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.mobile-icon {
+    margin: 12px;
+    width: 16px;
+    height: 16px;
+}
 /* mobile menu end */
 
 
@@ -236,6 +293,15 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section-main-heading {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office@2x.jpg);
+    }
 }
 
 .order-service {
