@@ -45,6 +45,7 @@ body {
 .menu-wrapper {
     min-height: 70px;
     display: flex;
+    justify-content:space-between;
     
 }
 
@@ -69,7 +70,6 @@ body {
     min-height: 22px;
     min-width: 32px;
     display: flex;
-    margin-left: 249px;
     margin-top: 24px;
     margin-bottom: 24px;
     background-color: transparent;
@@ -247,7 +247,8 @@ body {
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 1.12px;
-        padding-top: 112px;
+        max-width: 320px;
+        margin: 0,auto;
         padding-bottom: 72px;
 }
 
@@ -260,10 +261,10 @@ body {
     background-position: center;
     background-size: cover;
     min-height: 432px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+text-align: center;
     margin: 0;
+    padding: 112px, 0;
+    
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -530,7 +531,6 @@ margin-top: 16px;
         letter-spacing: 0.72px;
         color: var(--color-headings);
         margin-bottom: 8px;
-        width: 396px;
         display: flex;
         justify-content: center;
 }
@@ -544,7 +544,7 @@ margin-top: 16px;
         letter-spacing: 0.32px;
         color:var(--color-text);
         margin-top: 0px;
-        width: 396px;
+        
         
 }
 
@@ -654,6 +654,7 @@ gap: 72px;
         row-gap: 72px;
         column-gap: 16px;
         flex-basis: calc((100% - 72px) / 2);
+        justify-content: center;
 }
 .customers-icon {
     fill: #8e8f99;
@@ -690,6 +691,9 @@ gap: 72px;
     line-height: 1.5;
     letter-spacing: 0.32px;
     margin-bottom: 0px;
+    text-align: center;
+    padding-top: 17.5px;
+    padding-bottom: 72px;
 
 }
 
@@ -701,7 +705,10 @@ gap: 72px;
     margin-bottom: 0px;
     font-weight: 500;
 }
-
+.log-ft-wrap {
+    padding-top: 97.5px;
+    text-align: center;
+}
 .logo-footer {
     font-family: var(--font-logo);
     font-size: 18px;
@@ -712,42 +719,17 @@ gap: 72px;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-footer);
-    margin-bottom: 17.5px;
-    margin-top: 97.5px;
-}
-
-.logo-wrapper-footer {
-    max-width: 264px;
-    margin-bottom: 72px;
-
+    text-align: center;
 }
 
 
-
-.footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-        
-}
-
-.logo-wrapper-footer>a {
-    display: flex;
-    justify-content: center;
-        align-items: center;
-        
-    
-}
-.footer-wrapper>p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-        align-items: center;
-}
 
 .sm-wrapper {
-    max-width: 264px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
@@ -760,9 +742,8 @@ gap: 72px;
     padding-top: 16px;
 }
 .sm-text {
-    display: flex;
-        justify-content: center;
-        align-items: center;
+    
+        text-align: center;
 
 }
 .footer-sm-wrapper {
@@ -790,7 +771,7 @@ gap: 72px;
     margin-top: 72px;
 }
 .sub-wrap {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
         align-items: center;
@@ -802,7 +783,7 @@ gap: 72px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.32px;    
-        display: flex;
+        display: flex; 
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -814,7 +795,8 @@ gap: 72px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: var(--background-color-footer);
     min-height: 40px;
-    min-width: 398px;
+    width: 100%;
+    max-width: 398px;
     padding-left: 16px;
     color:rgba(255, 255, 255, 1) ;
 transition-property: border ;
@@ -827,6 +809,9 @@ transition-property: border ;
 .input-style-ft:hover, .input-style-ft:focus {
     border: 1px solid var(--active-color);
 }
+.button-wrap {
+    padding-top:16px;
+}
 .subscribe-button {
     position: relative;
         /* Button Text */
@@ -838,7 +823,7 @@ transition-property: border ;
         /*button-style*/
         padding-left: 24px;
         padding-top: 8px;
-        display: flex;
+        display: flex; 
         flex-direction: row;
     background-color: rgba(77, 90, 229, 1);
     border-radius: 4px;
@@ -854,10 +839,7 @@ transition-property: border ;
 .subscribe-button:hover , .subscribe-button:focus {
     background-color: var(--active-color);
 }
-.button-wrap {
-    position: relative;
-    margin-top: 16px;
-}
+
 .subscribe-icon {
     position: absolute;
     top: 50%;
