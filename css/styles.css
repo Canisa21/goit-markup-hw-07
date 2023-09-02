@@ -1110,4 +1110,11 @@ column-gap: 24px;
     justify-content: flex-start;
     gap: 24px;
 }
+
+.log-text {
+    margin-right: 120px;
+}
+.social-wrap {
+    margin-right: 56px;
+}
 }
