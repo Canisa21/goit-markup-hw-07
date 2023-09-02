@@ -921,31 +921,85 @@ transition-property: border ;
 .main-pillars-list {
                       list-style-type: none;
                       display: flex;
+                      flex-direction: row;
                       flex-wrap: wrap;
                       row-gap: 72px ;
                       column-gap: 24px;
                     
                   }
       .pillar-item {
-flex-basis: calc((100% - 72px) / 2);
+flex-basis: 356px;
       }
        
           .section-team {
               background-color: var(--background-color-ourteam);
-            display: flex;
-                flex-wrap: wrap;
-                row-gap: 64px;
-                column-gap: 24px;
-                flex-basis: calc((100% - 64px) / 2);
+            
           }
     
           .team-list {
+            display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
                 row-gap: 64px;
                 column-gap: 24px;
-                flex-basis: calc((100% - 64px) / 2);
+                justify-content: center;
             }
-          }
+
+                        .customers-icon {
+            width: 168px;
+                            height: 88px;
+                        
+                        }
+
+.customers-list {
+                                                   
+column-gap: 24px;
+                }
+                                           .footer-container {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            gap: 72px 24px;
+                                            max-width: 550px;
+
+                                           }
+.footer-style {
+    min-height: none;
+    padding: 100px 0;
+}
+.log-ft-wrap {
+            padding-top: 0px;
+            text-align: left;
+        }
+.footer-text {
+    padding-bottom: 0;
+    max-width: 264px;
+    text-align: left;
+}
+
+.footer-form-wrapper {
+    margin-top: 0 ;
+}
+.sub-wrap {
+    flex-direction: row;
+    gap:24px;
+}            
+.button-wrap {
+    padding-top: 0;
+}               
+.input-style-ft {
+    width:264px;
+}              
+
+.subscribe-text {
+    align-items: flex-start;
+}
+
+.sm-text {
+ text-align: left;
+}
+            }
+
+                  
 
 
 
